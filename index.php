@@ -42,7 +42,7 @@ and open the template in the editor.
         $third->add_grade(100);
         $third->add_grade(100);
         $third->add_grade(100);
-        $students['z127'] = $third;
+        $students['h789'] = $third;
         
         ksort($students); // one of the many sort functions
 
