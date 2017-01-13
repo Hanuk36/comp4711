@@ -11,8 +11,9 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        include('Student.php');
-
+        include('Student.php'); // Create Student.php file
+        
+        // Create first student. This shows first name, last name, place of work, email and average grade
         $students = array();
         $first = new Student();
         $first->surname = "Doe";
@@ -24,6 +25,7 @@ and open the template in the editor.
         $first->add_grade(55);
         $students['j123'] = $first;
         
+        // Create second student. This shows first name, last name, place of work, email and average grade
         $second = new Student();
         $second->surname = "Einstein";
         $second->first_name = "Albert";
@@ -35,6 +37,7 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
         
+        // Create third student. This shows first name, last name, place of work, email and average grade
         $third = new Student();
         $third->surname = "Choi"; 
         $third->first_name = "Hanuk";
@@ -44,8 +47,10 @@ and open the template in the editor.
         $third->add_grade(100);
         $students['h789'] = $third;
         
+        // It diplays student name, average grade, place of work, email address. It displays students by aphabetical order of first name.
         ksort($students); // one of the many sort functions
 
+        // This is the array of students
         foreach($students as $student)
             echo $student->toString();     
         ?>
