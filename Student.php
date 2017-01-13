@@ -20,14 +20,17 @@ class Student {
         $this->grades = array();
     }
     
+    // It adds students' email addresses
     function add_email($which,$address) {
         $this->emails[$which] = $address;
     }
 
+    // It adds students' grade
     function add_grade($grade) {
         $this->grades[] = $grade;
     }
     
+    // It calculate students' average grades
     function average() {
         $total = 0;
         foreach ($this->grades as $value)
@@ -35,6 +38,7 @@ class Student {
         return $total / count($this->grades);
     }
     
+    // It diplays Students' information such as first name, last name, average grades, place of work, email addresses.
     function toString() {
         $result = $this->first_name . ' ' . $this->surname;
         $result .= ' ('.$this->average().")\n";
