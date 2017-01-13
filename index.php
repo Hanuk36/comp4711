@@ -38,7 +38,7 @@ and open the template in the editor.
         $third = new Student();
         $third->surname = "Choi"; 
         $third->first_name = "Hanuk";
-        $third->add_email('work', '12fdamb@gmail.com');
+        $third->add_email('work','12fdamb@gmail.com');
         $third->add_grade(100);
         $third->add_grade(100);
         $third->add_grade(100);
